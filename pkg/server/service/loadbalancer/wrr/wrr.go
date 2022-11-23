@@ -23,6 +23,7 @@ type stickyCookie struct {
 	name     string
 	secure   bool
 	httpOnly bool
+	domain   string
 }
 
 // Balancer is a WeightedRoundRobin load balancer based on Earliest Deadline First (EDF).
