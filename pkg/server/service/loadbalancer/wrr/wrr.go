@@ -58,6 +58,7 @@ func New(sticky *dynamic.Sticky, hc *dynamic.HealthCheck) *Balancer {
 			name:     sticky.Cookie.Name,
 			secure:   sticky.Cookie.Secure,
 			httpOnly: sticky.Cookie.HTTPOnly,
+			domain:   sticky.Cookie.Domain,
 		}
 	}
 	return balancer
